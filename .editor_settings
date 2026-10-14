@@ -1,0 +1,486 @@
+{
+  :code {
+    :breakpoints [
+    ]
+  }
+  :run {
+    :simulated-resolution {
+      :custom true
+      :height 640
+      :width 960
+    }
+  }
+  :scene {
+    :grid-2d {
+      :active-plane :z
+    }
+    :resource-settings {
+      "/main/ability_test.go" {
+        :camera {
+          :focus-point [
+            0.018292999325031034
+            -0.046403801040101667
+            0.0
+          ]
+          :fov-x 2.462630097902037
+          :fov-y 2.3069049593582314
+          :position [
+            0.018292999325031034
+            -0.046403801040101667
+            5000.0
+          ]
+          :projection :orthographic
+          :rotation [
+            0.0
+            0.0
+            0.0
+            1.0
+          ]
+        }
+      }
+      "/main/checkpoint_test.go" {
+        :camera {
+          :focus-point [
+            0.0
+            0.0
+            0.0
+          ]
+          :fov-x 3.88752941176481
+          :fov-y 2.200000000000059
+          :position [
+            0.0
+            0.0
+            5000.0
+          ]
+          :projection :orthographic
+          :rotation [
+            0.0
+            0.0
+            0.0
+            1.0
+          ]
+        }
+      }
+      "/main/event_bus_test.go" {
+        :camera {
+          :focus-point [
+            0.0
+            0.0
+            0.0
+          ]
+          :fov-x 2.34850863422296
+          :fov-y 2.2000000000000375
+          :position [
+            0.0
+            0.0
+            5000.0
+          ]
+          :projection :orthographic
+          :rotation [
+            0.0
+            0.0
+            0.0
+            1.0
+          ]
+        }
+      }
+      "/main/gameplay_object_test.go" {
+        :camera {
+          :focus-point [
+            0.0
+            0.0
+            0.0
+          ]
+          :fov-x 2.6866043613708186
+          :fov-y 2.2000000000000837
+          :position [
+            0.0
+            0.0
+            5000.0
+          ]
+          :projection :orthographic
+          :rotation [
+            0.0
+            0.0
+            0.0
+            1.0
+          ]
+        }
+      }
+      "/main/health_test.go" {
+        :camera {
+          :focus-point [
+            0.0
+            0.0
+            0.0
+          ]
+          :fov-x 3.414366729678749
+          :fov-y 2.2000000000000712
+          :position [
+            0.0
+            0.0
+            5000.0
+          ]
+          :projection :orthographic
+          :rotation [
+            0.0
+            0.0
+            0.0
+            1.0
+          ]
+        }
+      }
+      "/main/input_test.go" {
+        :camera {
+          :focus-point [
+            0.0
+            0.0
+            0.0
+          ]
+          :fov-x 3.7995294117648073
+          :fov-y 2.200000000000059
+          :position [
+            0.0
+            0.0
+            5000.0
+          ]
+          :projection :orthographic
+          :rotation [
+            0.0
+            0.0
+            0.0
+            1.0
+          ]
+        }
+      }
+      "/main/inventory_test.go" {
+        :camera {
+          :focus-point [
+            0.0
+            0.0
+            0.0
+          ]
+          :fov-x 3.41436672967872
+          :fov-y 2.200000000000052
+          :position [
+            0.0
+            0.0
+            5000.0
+          ]
+          :projection :orthographic
+          :rotation [
+            0.0
+            0.0
+            0.0
+            1.0
+          ]
+        }
+      }
+      "/main/main.collection" {
+        :camera {
+          :focus-point [
+            82.29243482588879
+            111.42234576099511
+            6.785667950480292
+          ]
+          :fov-x 1712.122260483296
+          :fov-y 1016.3722033206084
+          :position [
+            82.29243482588879
+            111.42234576099511
+            5000.0000999999975
+          ]
+          :projection :orthographic
+          :rotation [
+            0.0
+            0.0
+            0.0
+            1.0
+          ]
+        }
+      }
+      "/main/respawn_test.go" {
+        :camera {
+          :focus-point [
+            0.0
+            0.0
+            0.0
+          ]
+          :fov-x 3.88752941176481
+          :fov-y 2.200000000000059
+          :position [
+            0.0
+            0.0
+            5000.0
+          ]
+          :projection :orthographic
+          :rotation [
+            0.0
+            0.0
+            0.0
+            1.0
+          ]
+        }
+      }
+      "/main/room_manager_test.go" {
+        :camera {
+          :focus-point [
+            0.0
+            0.0
+            0.0
+          ]
+          :fov-x 1.9357254290172343
+          :fov-y 2.2000000000000837
+          :position [
+            0.0
+            0.0
+            5000.0
+          ]
+          :projection :orthographic
+          :rotation [
+            0.0
+            0.0
+            0.0
+            1.0
+          ]
+        }
+      }
+      "/main/save_test.go" {
+        :camera {
+          :focus-point [
+            0.0
+            0.0
+            0.0
+          ]
+          :fov-x 2.4856716417911042
+          :fov-y 2.2000000000000526
+          :position [
+            0.0
+            0.0
+            5000.0
+          ]
+          :projection :orthographic
+          :rotation [
+            0.0
+            0.0
+            0.0
+            1.0
+          ]
+        }
+      }
+      "/main/state_machine_test.go" {
+        :camera {
+          :focus-point [
+            0.0
+            0.0
+            0.0
+          ]
+          :fov-x 2.348508634222944
+          :fov-y 2.2000000000000224
+          :position [
+            0.0
+            0.0
+            5000.0
+          ]
+          :projection :orthographic
+          :rotation [
+            0.0
+            0.0
+            0.0
+            1.0
+          ]
+        }
+      }
+      "/main/stats_test.go" {
+        :camera {
+          :focus-point [
+            0.0
+            0.0
+            0.0
+          ]
+          :fov-x 2.672161741835168
+          :fov-y 2.2000000000000166
+          :position [
+            0.0
+            0.0
+            5000.0
+          ]
+          :projection :orthographic
+          :rotation [
+            0.0
+            0.0
+            0.0
+            1.0
+          ]
+        }
+      }
+      "/main/timer_test.go" {
+        :camera {
+          :focus-point [
+            0.0
+            0.0
+            0.0
+          ]
+          :fov-x 2.348508634222944
+          :fov-y 2.2000000000000224
+          :position [
+            0.0
+            0.0
+            5000.0
+          ]
+          :projection :orthographic
+          :rotation [
+            0.0
+            0.0
+            0.0
+            1.0
+          ]
+        }
+      }
+    }
+  }
+  :workflow {
+    :open-tabs [
+      [
+        [
+          "/main/main.collection"
+          :scene
+        ]
+        [
+          "/scripts/gameplay/gameplay_object.lua"
+          :code
+        ]
+      ]
+    ]
+    :recent-files [
+      [
+        "/scripts/respawn_test.script"
+        :code
+      ]
+      [
+        "/main/input_test.go"
+        :scene
+      ]
+      [
+        "/scripts/input_test.script"
+        :code
+      ]
+      [
+        "/render.render_script"
+        :code
+      ]
+      [
+        "/app.appmanifest"
+        :code
+      ]
+      [
+        "/localization.editor_localization"
+        :code
+      ]
+      [
+        "/editor.editor_script"
+        :code
+      ]
+      [
+        "/target.render_target"
+        :form
+      ]
+      [
+        "/input.input_binding"
+        :form
+      ]
+      [
+        "/texture.texture_profiles"
+        :form
+      ]
+      [
+        "/render.render"
+        :form
+      ]
+      [
+        "/screen.display_profiles"
+        :form
+      ]
+      [
+        "/controller.gamepads"
+        :form
+      ]
+      [
+        "/main/gameplay_object_test.go"
+        :scene
+      ]
+      [
+        "/scripts/gameplay/gameplay_object_test.script"
+        :code
+      ]
+      [
+        "/scripts/gameplay/save.lua"
+        :code
+      ]
+      [
+        "/scripts/gameplay/ability.lua"
+        :code
+      ]
+      [
+        "/scripts/core/timer.lua"
+        :code
+      ]
+      [
+        "/scripts/core/state_machine.lua"
+        :code
+      ]
+      [
+        "/scripts/core/input.lua"
+        :code
+      ]
+      [
+        "/scripts/core/event_bus.lua"
+        :code
+      ]
+      [
+        "/scripts/gameplay/ability_manager.lua"
+        :code
+      ]
+      [
+        "/scripts/gameplay/checkpoint.lua"
+        :code
+      ]
+      [
+        "/scripts/gameplay/health.lua"
+        :code
+      ]
+      [
+        "/scripts/gameplay/inventory.lua"
+        :code
+      ]
+      [
+        "/scripts/gameplay/respawn.lua"
+        :code
+      ]
+      [
+        "/scripts/gameplay/room_manager.lua"
+        :code
+      ]
+      [
+        "/scripts/gameplay/stats.lua"
+        :code
+      ]
+      [
+        "/Name.material"
+        :form
+      ]
+      [
+        "/main/humminless.atlas"
+        :scene
+      ]
+      [
+        "/main/main.collection"
+        :scene
+      ]
+      [
+        "/scripts/gameplay/gameplay_object.lua"
+        :code
+      ]
+    ]
+  }
+}
