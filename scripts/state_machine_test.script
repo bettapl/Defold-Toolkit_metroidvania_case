@@ -1,0 +1,40 @@
+local StateMachine = require "scripts.core.state_machine"
+
+function init(self)
+	self.machine = StateMachine.new("idle")
+	self.time = 0
+	self.tested = false
+
+	StateMachine.add(self.machine, "idle", nil, nil, function(machine, dt)
+		print("IDLE")
+	end)
+
+	StateMachine.add(self.machine, "running", nil, nil, function(machine, dt)
+		print("RUNNING")
+	end)
+
+	print("Is idle:", StateMachine.is(self.machine, "idle"))
+	print("Is running:", StateMachine.is(self.machine, "running"))
+	
+end
+
+function update(self, dt)
+	self.time = self.time + dt
+
+	StateMachine.update(self.machine, dt)
+
+	if self.time >= 1 and StateMachine.is(self.machine, "idle") then
+		StateMachine.set(self.machine, "running")
+	end
+
+	if self.time >= 2 and not self.tested then
+		self.tested = true
+
+		local success = pcall(function()
+			StateMachine.remove(self.machine, "running")
+		end)
+
+		print("Remove current state success:", success)
+		print("Current state:", StateMachine.get(self.machine))
+	end
+end

@@ -1,0 +1,49 @@
+local Stats = require "scripts.gameplay.stats"
+
+function init(self)
+	local stats = Stats.new()
+
+	Stats.set(stats, "health", 75)
+	Stats.set(stats, "attack", 25)
+	Stats.set(stats, "defense", 10)
+	Stats.set_max(stats, "health", 100)
+
+	print("Health:", Stats.get(stats, "health"))
+	print("Attack:", Stats.get(stats, "attack"))
+	print("Defense:", Stats.get(stats, "defense"))
+	print("Missing stat:", Stats.get(stats, "speed"))
+
+	local new_health = Stats.modify(stats, "health", -25)
+
+	print("Health after damage:", new_health)
+
+	local new_attack = Stats.modify(stats, "attack", 10)
+
+	print("Attack after increase:", new_attack)
+
+	print("Has health:", Stats.has(stats, "health"))
+	print("Has speed:", Stats.has(stats, "speed"))
+
+	print("Max health:", Stats.get_max(stats, "health"))
+
+	print("Health before heal:", Stats.get(stats, "health"))
+
+	Stats.modify(stats, "health", 50)
+
+	print("Health after big heal:", Stats.get(stats, "health"))
+
+	Stats.set_min(stats, "health", 0)
+
+	print("Min health:", Stats.get_min(stats, "health"))
+
+	Stats.modify(stats, "health", -500)
+
+	print("Health after huge damage:", Stats.get(stats, "health"))
+
+	Stats.remove(stats, "health")
+
+	print("Has health after remove:", Stats.has(stats, "health"))
+	print("Health after remove:", Stats.get(stats, "health"))
+	print("Max health after remove:", Stats.get_max(stats, "health"))
+	print("Min health after remove:", Stats.get_min(stats, "health"))
+end

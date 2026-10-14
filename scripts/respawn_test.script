@@ -1,0 +1,19 @@
+local Checkpoint = require "scripts.gameplay.checkpoint"
+local Respawn = require "scripts.gameplay.respawn"
+
+function init(self)
+	local checkpoint = Checkpoint.new()
+
+	print("Can respawn initially:", Respawn.can_respawn(checkpoint))
+
+	Checkpoint.set(
+		checkpoint,
+		"village",
+		vmath.vector3(100, 50, 0)
+	)
+
+	print("Can respawn after checkpoint:", Respawn.can_respawn(checkpoint))
+
+	print("Respawn room:", Respawn.get_room(checkpoint))
+	print("Respawn position:", Respawn.get_position(checkpoint))
+end

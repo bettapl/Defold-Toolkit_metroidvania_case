@@ -1,0 +1,18 @@
+local Checkpoint = require "scripts.gameplay.checkpoint"
+
+function init(self)
+	local checkpoint = Checkpoint.new()
+
+	print("Initial room:", Checkpoint.get_room(checkpoint))
+	print("Initial position:", Checkpoint.get_position(checkpoint))
+
+	Checkpoint.set(checkpoint, "village", vmath.vector3(100, 50, 0))
+
+	print("Room:", Checkpoint.get_room(checkpoint))
+	print("Position:", Checkpoint.get_position(checkpoint))
+
+	Checkpoint.clear(checkpoint)
+
+	print("Room after clear:", Checkpoint.get_room(checkpoint))
+	print("Position after clear:", Checkpoint.get_position(checkpoint))
+end
