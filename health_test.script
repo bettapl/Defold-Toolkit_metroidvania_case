@@ -1,0 +1,46 @@
+local Health = require "scripts.gameplay.health"
+
+function init(self)
+	local health = Health.new(100)
+
+	print("Current health:", Health.get_current(health))
+	print("Max health:", Health.get_max(health))
+	print("Is dead:", Health.is_dead(health))
+
+	Health.damage(health, 30)
+
+	print("Health after 30 damage:", Health.get_current(health))
+
+	Health.heal(health, 10)
+
+	print("Health after 10 heal:", Health.get_current(health))
+
+	Health.heal(health, 100)
+
+	print("Health after big heal:", Health.get_current(health))
+
+	Health.damage(health, 100)
+
+	print("Health after lethal damage:", Health.get_current(health))
+	print("Is dead after lethal damage:", Health.is_dead(health))
+
+	local damage_dead = Health.damage(health, 10)
+
+	print("Damage dead result:", damage_dead)
+	print("Health after damaging dead:", Health.get_current(health))
+
+	local heal_dead = Health.heal(health, 10)
+
+	print("Heal dead result:", heal_dead)
+	print("Health after healing dead:", Health.get_current(health))
+	
+	Health.revive(health, 50)
+
+	print("Health after revive:", Health.get_current(health))
+	print("Is dead after revive:", Health.is_dead(health))
+
+	Health.revive(health, 999)
+
+	print("Health after full revive:", Health.get_current(health))
+	print("Is dead after full revive:", Health.is_dead(health))
+end

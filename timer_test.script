@@ -1,0 +1,12 @@
+local Timer = require "scripts.core.timer"
+
+function init(self)
+	local timer_id = Timer.every(0.5, function()
+		print("TICK")
+	end)
+
+	Timer.after(2, function()
+		Timer.cancel(timer_id)
+		print("Timer stopped")
+	end)
+end

@@ -1,0 +1,41 @@
+local Inventory = require "scripts.gameplay.inventory"
+
+function init(self)
+	local inventory = Inventory.new()
+
+	Inventory.add(inventory, "coin", 10)
+	Inventory.add(inventory, "coin", 5)
+	Inventory.add(inventory, "key", 2)
+
+	print("Coins:", Inventory.get_count(inventory, "coin"))
+	print("Keys:", Inventory.get_count(inventory, "key"))
+	print("Has coin:", Inventory.has(inventory, "coin"))
+	print("Has sword:", Inventory.has(inventory, "sword"))
+
+	local removed = Inventory.remove(inventory, "coin", 5)
+
+	print("Remove coins result:", removed)
+	print("Coins after remove:", Inventory.get_count(inventory, "coin"))
+
+	local failed_remove = Inventory.remove(inventory, "coin", 100)
+
+	print("Remove too many coins:", failed_remove)
+	print("Coins after failed remove:", Inventory.get_count(inventory, "coin"))
+
+	Inventory.remove(inventory, "key", 2)
+
+	print("Has key after removing all:", Inventory.has(inventory, "key"))
+	print("Key count after removing all:", Inventory.get_count(inventory, "key"))
+
+	Inventory.clear(inventory)
+
+	print("Coins after clear:", Inventory.get_count(inventory, "coin"))
+	print("Has coin after clear:", Inventory.has(inventory, "coin"))
+
+	local items = Inventory.get_items(inventory)
+
+	for item_name, amount in pairs(items) do
+		print("Item:", item_name, "Amount:", amount)
+	end
+	
+end

@@ -1,0 +1,18 @@
+local EventBus = require "scripts.core.event_bus"
+
+function init(self)
+	print("Initially:")
+	print(EventBus.has("test"))
+
+	EventBus.on("test", function()
+		print("TEST")
+	end)
+
+	print("After on:")
+	print(EventBus.has("test"))
+
+	EventBus.clear("test")
+
+	print("After clear:")
+	print(EventBus.has("test"))
+end
